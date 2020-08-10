@@ -1,0 +1,3 @@
+- A comprehensive course of software engineer that cover the most aspect of a practice software engineering knowledge.
+- [Graduated with the outstanding class. Be the Aptech Face - make a presentation that represented for the graduated students in the ending ceremony ](https://aptechvietnam.com.vn/BAI-DIEN-VAN-CHAM-VAO-TRAI-TIM-MOI-NGUOI?fbclid=IwAR0fploMrj1H3D6jdXFTC1AValYEvSLlTRXGFXNCOPNuyEeftkST4a4z_U8)
+- [Be the unique student that get the 100% Scholarship for entire training course](https://aptechvietnam.com.vn/content/gap-go-chang-trai-am-tron-suat-hoc-bong-toan-phan-65-trieu-tu-aptech).

@@ -1,0 +1,5 @@
+- Proposed and be accepted the new architect for styling component that is themed base which bring some benefits:
+     - reduce the boilerplate code
+     - easy to maintain
+     - reduce the overhead runtime
+     - better theme support
