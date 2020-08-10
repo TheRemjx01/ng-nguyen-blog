@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 const name = 'Nghia Nguyen'
 export const siteTitle = 'Nghia Nguyen\'s blog'
+const avatarImgSrc = '/images/profile.png'
 
 export default function Layout({ children, home }) {
   return (
@@ -28,7 +29,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/profile.png"
+              src={avatarImgSrc}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -39,7 +40,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src={avatarImgSrc}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
