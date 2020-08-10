@@ -25,3 +25,9 @@ img {
   max-width: 100%;
   display: block;
 }
+
+pre > code[class] {
+  display: block;
+  max-width: 100%;
+  overflow-y: scroll
+}
