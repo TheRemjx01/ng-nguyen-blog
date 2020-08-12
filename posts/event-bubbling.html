@@ -1,0 +1,35 @@
+<html>
+    <head>Event Bubbling Example</head>
+    <body>
+        <table>
+            <thead>
+            <tr>
+                <td>Project</td>
+                <td>Author</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Shady Grove</td>
+                <td>Aeolian</td>
+            </tr>
+            <tr>
+                <td id="second-item">Over the River, Charlie</td>
+                <td>Dorian</td>
+            </tr>
+            </tbody>
+        </table>
+        <script>
+                const body = document.getElementsByTagName('body')[0]
+                const secondTd = document.getElementById('second-item')
+
+                body.addEventListener('click', () => {
+                    console.log('body clicked')
+                })
+
+                secondTd.addEventListener('click', () => {
+                    console.log('second-item clicked')
+                })
+        </script>
+    </body>
+</html>
