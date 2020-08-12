@@ -58,7 +58,7 @@ Now, if you open the browser and click the cell with id `second-item` in the tab
 1. `second-item clicked`
 2. `body clicked`
 
-See the [full example here](./event-bubbling.html)
+See the [full example here](/public/event-bubbling.html)
  
 ### Stop event bubbling
 But what if you don't want the event bubbling? In the above example, what if we have a requirement that whenever the `#second-item` click, the event should just stay there without bubble to the above level. We can achieve this by modify the `secondTd` listener:
@@ -71,7 +71,7 @@ secondTd.addEventListener('click', (event) => {
 
 Now, if you open the browser and click the `#second-item`, you wouldn't see the `body clicked` message anymore. If you click the other part of the HTML doc, `body clicked` will still show up.
 
-See the [full example here](./event-bubbling-stop-propagation.html)
+See the [full example here](/public/event-bubbling-stop-propagation.html)
 
 We have just remind about `Event Bubbling`, the nature of the browser DOM. Now we would back to React to see the differents.   
 
