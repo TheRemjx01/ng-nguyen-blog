@@ -1,6 +1,6 @@
 ---
-title: "[WIP]You may not know about React Event Delegation yet"
-date: "2020-08-11"
+title: "You may not know about React Event Delegation yet"
+date: "2020-08-14"
 ---
 
 React `v17.0-rc` has just been released yesterday. This release is quite interesting as its claim: "No new features". We can take a cool breath to hear that. We don't need to migrate our project from the legacy API to the newer API. Change from Class Component to Functional Component or move from old lifecycle hooks method to the new React hooks are quite painful in the past. However, the release doc still has some interesting notes. One of them is [Changes to Event Delegation](https://reactjs.org/blog/2020/08/10/react-v17-rc.html#changes-to-event-delegation), this blog will remind about the event propagation then show some facts and reveal the unclear part about React Event Delegation.
@@ -173,8 +173,16 @@ Finally, to mitigate this problem, the newest release `React17rc` has a changes:
 
 > In React 16 and earlier, React would do document.addEventListener() for most events. React 17 will call rootNode.addEventListener() under the hood instead.
 
+![React 17 event delegation changes](https://reactjs.org/static/bb4b10114882a50090b8ff61b3c4d0fd/1e088/react_17_delegation.png)
 
+With this change, we can expect that there will be no more confusion related to the `React Event Delegation`.
 
+## Conclusion
+
+To recap, we have some key notes:
+- From `React16` backward, `event` would be collected by the document before it could go into the normal event flow for React optimization. This is called: `React Event Delegation`
+- `React Event Delegation` can make user confuse due to the abnormal behavior then could make some unexpected bug in application development.
+- With `React17rc`, the event collector now move to root node instead of `document`, which is more stable & resilient overall. But remember, it still be attached to root node. 
   
 
 ## References
