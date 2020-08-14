@@ -31,3 +31,7 @@ pre > code[class] {
   max-width: 100%;
   overflow-y: scroll
 }
+
+blockquote {
+  font-style: italic;
+}
