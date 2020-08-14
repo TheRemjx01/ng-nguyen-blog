@@ -3,7 +3,7 @@ title: "You may not know about React Event Delegation yet"
 date: "2020-08-14"
 ---
 
-React `v17.0-rc` has just been released yesterday. This release is quite interesting as its claim: "No new features". We can take a cool breath to hear that. We don't need to migrate our project from the legacy API to the newer API. Change from Class Component to Functional Component or move from old lifecycle hooks method to the new React hooks are quite painful in the past. However, the release doc still has some interesting notes. One of them is [Changes to Event Delegation](https://reactjs.org/blog/2020/08/10/react-v17-rc.html#changes-to-event-delegation), this blog will remind about the event propagation then show some facts and reveal the unclear part about React Event Delegation.
+React `v17.0-rc` has just been released yesterday. This release is quite interesting as its claim: "No new features". We can take a cool breath to hear that. We don't need to migrate our project from the legacy API to the newer API. Change from Class Component to Functional Component or move from the old lifecycle hooks method to the new React Hooks are quite painful in the past. However, the release doc still has some interesting notes. One of them is [Changes to Event Delegation](https://reactjs.org/blog/2020/08/10/react-v17-rc.html#changes-to-event-delegation), this blog will remind about the event propagation then show some facts and reveal the unclear part about React Event Delegation.
 
 ## What is Event Bubbling?
 ![Event Bubbling](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/05/1495534508eventflow.svg)
@@ -73,7 +73,7 @@ Now, if you open the browser and click the `#second-item`, you wouldn't see the 
 
 See the [full example here](https://github.com/TheRemjx01/ng-nguyen-blog/blob/master/public/event-bubbling-stop-propagation.html)
 
-We have just remind about `Event Bubbling`, the nature of the browser DOM. Now we would back to React to see the differents.   
+We have just reminded the`Event Bubbling`, the nature of the browser DOM. Now we would back to React to see the difference.   
 
 ## React Event Delegation
 
@@ -146,10 +146,10 @@ Nothing special right?, just another version of the above example but written in
 3. `Table clicked`
 
 Oops, what's wrong here? Let me check. 
-- First, we have already stop the event propagation right? Why `Document clicked` still stay there?
+- First, we have already stopped the event propagation right? Why `Document clicked` still stay there?
 - Second, even `event.stopPropagation` is not working but the order is totally wrong. The correct order should be `App Btn clicked` then `Table clicked` then `Document clicked` where is our `Event Bubbling`?
 
-The answer is because of the `React Event Delegation`. I have not been cared about it until the release of `React17rc` recently. Here is the explaination about `React Event Delegation` from `ReactJS` web page:
+The answer is because of the `React Event Delegation`. I have not cared about it until the release of `React17rc` recently. Here is the explanation about `React Event Delegation` from `ReactJS` web page:
  
 > React attaches one handler per event type directly at the document node. This is called event delegation. In addition to its performance benefits on large application trees, it also makes it easier to add new features like replaying events.
 
@@ -166,9 +166,9 @@ Due to the abnormal behavior of `React`, it could confuse the developers using `
 - [Event listener attached to `document` will still be called after calling `event.stopPropagation()`](https://github.com/facebook/react/issues/12518)
 - [Clean up top-level event listeners after unmounting all roots](https://github.com/facebook/react/issues/7128)
 
-So most of the issues related to the confusion of the React's users about event handling like the above example. Even worse, it could be lead to memory leak if we use `<iframe>` that have event listener inside that. I will create another topic about this problem as it can be long.
+So most of the issues related to the confusion of the React's users about event handling like the above example. Even worse, it could be lead to the memory leaking issue if we use `<iframe>` that have event listeners inside that. I will create another topic about this problem as it can be lengthy.
 
-Finally, to mitigate this problem, the newest release `React17rc` has a changes:
+Finally, to mitigate this problem, the newest release `React17rc` has a remarkable change:
 > In React 17, React will no longer attach event handlers at the document level. Instead, it will attach them to the root DOM container into which your React tree is rendered
 
 > In React 16 and earlier, React would do document.addEventListener() for most events. React 17 will call rootNode.addEventListener() under the hood instead.
@@ -179,10 +179,10 @@ With this change, we can expect that there will be no more confusion related to 
 
 ## Conclusion
 
-To recap, we have some key notes:
-- From `React16` backward, `event` would be collected by the document before it could go into the normal event flow for React optimization. This is called: `React Event Delegation`
-- `React Event Delegation` can make user confuse due to the abnormal behavior then could make some unexpected bug in application development.
-- With `React17rc`, the event collector now move to root node instead of `document`, which is more stable & resilient overall. But remember, it still be attached to root node. 
+To recap, we have some keynotes:
+- From `React16` backward, the `event` would be collected by the document before it could go into the normal event flow for React optimization. This is called: `React Event Delegation`
+- `React Event Delegation` can make user confuse due to the abnormal behavior and could make some unexpected bugs in application development.
+- With `React17rc`, the event collector now moves to the root node instead of `document`, which is more stable & resilient overall. But remember, it still be attached to the root node. 
   
 
 ## References
