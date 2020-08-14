@@ -1,1 +1,1 @@
-- Propose a new architecture that separate front end and back end development and leverage SPA development.
+- Propose a new architecture that separates front end and back end development and leverage SPA development.

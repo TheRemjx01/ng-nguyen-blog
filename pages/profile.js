@@ -17,6 +17,7 @@ const ExperienceItem = ({title, company, rangeFrom, rangeTo, description, techno
         <p>{rangeFrom} - {rangeTo}</p>
         <p>Technologies: {technologyStacks.toString()}</p>
         <ReactMarkdown source={description}/>
+        <p><b>Achievements:</b></p>
         <ReactMarkdown source={achievements}/>
     </div>
 )

@@ -1,1 +1,1 @@
-- The 2nd university degree that cover the fundamental knowledge in Computer Science fields include: Data Structure & Algorithm, Software and Hardware basic, Operation System and Networking.
+- The 2nd university degree that covers the fundamental knowledge in Computer Science fields includes Data Structure & Algorithm, Software, and Hardware basic, Operation System and Networking.
