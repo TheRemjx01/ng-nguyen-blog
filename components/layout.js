@@ -24,6 +24,8 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+       <link rel="stylesheet"
+             href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css"/>
       </Head>
       <header className={styles.header}>
         {home ? (
