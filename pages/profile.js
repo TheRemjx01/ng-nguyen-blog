@@ -55,12 +55,8 @@ export default function Profile({profileData}) {
             <div id="short-description">
                 {profileData.shortDescription}
             </div>
-            <div id="education">
-                <h2><label>Education</label></h2>
-                {
-                    profileData.education.map(props => <EducationItem {...props} key={props.school}/>)
-                }
-            </div>
+            
+
             <div id="work-experiences">
                 <h2><label>Work experiences</label></h2>
                 {
@@ -72,6 +68,13 @@ export default function Profile({profileData}) {
                 <h2><label>Technology</label></h2>
                 {
                     profileData.technology.map(props => <SkillItem {...props} key={props.level} />)
+                }
+            </div>
+
+            <div id="education">
+                <h2><label>Education</label></h2>
+                {
+                    profileData.education.map(props => <EducationItem {...props} key={props.school}/>)
                 }
             </div>
 
