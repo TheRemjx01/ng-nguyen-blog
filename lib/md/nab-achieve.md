@@ -1,0 +1,3 @@
+- Self-learn (using Company ACloudGuru subscription) & certified AWS Associate Solution Architect within 1 month in NAB.
+- Been trusted and recognized both in VN and AU.
+- Successfully built an MVP within 1 month in an OpenBanking key project. 
