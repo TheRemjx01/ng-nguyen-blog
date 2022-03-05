@@ -1,3 +1,5 @@
-- Self-learn (using Company ACloudGuru subscription) & certified AWS Associate Solution Architect within 1 month in NAB.
+- Being promoted as *Lead Engineer* since 2022.
+- Certified *AWS Associate Solution Architect* in 2021.
 - Been trusted and recognized both in VN and AU.
-- Successfully built an MVP within 1 month in an OpenBanking key project. 
+- Successfully build & release an MVP within 1 month which is a key project. 
+- Successfully build & release Error Handling V2 in 2022
