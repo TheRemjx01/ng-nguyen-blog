@@ -1,1 +1,1 @@
-- Being 3 times employee of the month
+- Being the Employee of the month - 3 times.

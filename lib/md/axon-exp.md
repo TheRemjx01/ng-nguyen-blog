@@ -1,6 +1,4 @@
-- Working as the Front end Core library contributor.
-- Designed, implemented reusable component that follow the Design System guidelines and being used by all other Axon's frontend projects that ensure good interfaces, UX as well as good a11y assessment
-- Designed, implemented code checking plugins
-- Researched, analysed usages of the library.
-- Researched, proposed the new architect proposal
-- Investigate performance problems and take action to mitigate
+- Design, implement React UI libraries that meet **AAA** accessibilities standards.
+- Design, implement linter libraries.
+- Research, propose & design new architect.
+- Optimize, improve performance.

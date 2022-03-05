@@ -1,11 +1,8 @@
-- Belong to the DAX(Driver Acquisition Experience) family. Working in Grab Rental system - a project that helps drivers to rent vehicles from Grab.
-- Designed, implemented in both Front end and Back end and deployed installment payment systems that take 1 million SGD dollars per week that g live in Singapore and Indonesia over a year that is high availability and reliability.
-- Take the Front end lead role (team size: 10) that responsible for clarifying requirements with the stakeholders and collaborate with other service owners.
-- Analyze, break down tasks, and provide the estimations that follow Agile/Scrum for each 2 weeks sprint.
-- Designed, implemented a Docker-base system that launches a production-like system environment that brings better DevExperiences for QA and devs with very limited resources.
-- Designed, implemented an automated code generated for API test.
-- Proposed, designed, and implemented an End to end testing solution that adapts BDD style, automates generate the testing report in Testrail, and integrates with Docker & CI/CD.
-- Implemented a non-Redux usage React architecture that is heavily component base
-- Implemented an automated data correction job that detects and corrects the data error in the system.
-- Interview and successfully recruited candidates for DAXs. All the passed candidates have passed the probation and highly rated by the managers
-Grab Tech Family
+- Design, implement the scalable installment plan & payment system for GrabRental in Singapore and Indonesia.
+- Working as the Front end lead.
+- Responsible for clarifying requirements with the stakeholders and collaborate with other service owners.
+- Sprint planning.
+- Design, implement a Docker-base system that launches a production-like system environment that brings better DevExperiences for QA and devs with very limited resources.
+- Propose, design, and implement the End to end testing solution using Cypress, Cucumber. Integrate with Testrail, CI/CD.
+- Implement the automated self-healing data correction job that detects and corrects the data error in the system.
+- Interview and successfully recruited candidates for Grab. 
