@@ -1,6 +1,5 @@
 - **The8days.vn**:
-- Successfully build and launch within 12 weeks.
-- A project of 8days Company - a company of Hanwha Corp - Korea.
+- Successfully built and launched within 12 weeks.
 - An ERP solution in the HORECA industry that widely use in the canteen, restaurants in Bac Ninh industry park
 - We provide the entire software solution and deployment from the design phase to the production launching that includes:
     - Cloud Base Solution in AWS
@@ -9,7 +8,7 @@
     - Management Portal with React
 
 - **Animastudios.co**:
-    - Successfully build and launch within 6 weeks.
+    - Successfully build and launch within six weeks.
     - The main website for an Australia based movie animation studio
     - An interactive website and PWA that have eye-catching, beautiful animation and good UI/UX
     - We provide the entire software solution and deployment from the design phase to the product launching.

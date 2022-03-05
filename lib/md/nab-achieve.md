@@ -1,5 +1,6 @@
-- Being promoted as *Lead Engineer* since 2022.
-- Certified *AWS Associate Solution Architect* in 2021.
+- Being promoted as **Lead Engineer** since 2022.
+- Certified **AWS Associate Solution Architect** in 2021.
 - Been trusted and recognized both in VN and AU.
-- Successfully build & release an MVP within 1 month which is a key project. 
-- Successfully build & release Error Handling V2 in 2022
+- Successfully designed, built & released a key MVP project within 1 month. 
+- Successfully built & released Error Handling V2 in 2022.
+- Conduct over 20 interviews in 2021 for NAB.

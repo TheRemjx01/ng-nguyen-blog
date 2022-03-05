@@ -1,5 +1,5 @@
-- Be the Employee of the Month - 2 times
-- Rated Outstanding - in 2019 review
-- Be promoted 2 times in a year
-- Directly involved, support and Successfully launch Singapore Grab Rental and Indonesia Grab Rental
-- The proposed end 2 end solution has been widely applied in DAX and other 
+- The Employee of the Month - 2 times
+- Outstanding Performance Review - in 2019 review
+- Being promoted - 2 times in a year.
+- Successful release project for two countries: Singapore, Indonesia.
+- End 2 end solution is well-endorsed and is applied to other teams.

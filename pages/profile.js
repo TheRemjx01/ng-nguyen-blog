@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 const EducationItem = ({title, school, rangeFrom, rangeTo, description}) => (
     <div className="education-item">
         <h3>{title} - <span>{school}</span></h3>
-        <p>{rangeFrom} - {rangeTo}</p>
+        <p><b>{rangeFrom}</b> - <b>{rangeTo}</b></p>
         <ReactMarkdown source={description}/>
     </div>
 )
@@ -14,7 +14,7 @@ const EducationItem = ({title, school, rangeFrom, rangeTo, description}) => (
 const ExperienceItem = ({title, company, rangeFrom, rangeTo, description, technologyStacks = [], achievements}) => (
     <div className="experience-item">
         <h3>{title} - <span>{company}</span></h3>
-        <p>{rangeFrom} - {rangeTo}</p>
+        <p><b>{rangeFrom}</b> - <b>{rangeTo}</b></p>
         <p>Technologies: {technologyStacks.toString()}</p>
         <ReactMarkdown source={description}/>
         <p><b>Achievements:</b></p>
@@ -24,7 +24,7 @@ const ExperienceItem = ({title, company, rangeFrom, rangeTo, description, techno
 
 const SkillItem = ({level, skillSet = []}) => (
     <div className="skill-item">
-        <label>{level}</label>
+        <label><b>{level.toUpperCase()}</b></label>
         <p>{skillSet.toString()}</p>
     </div>
 )
@@ -32,7 +32,7 @@ const SkillItem = ({level, skillSet = []}) => (
 const Reference = ({name, title, contact}) => (
     <div className="reference">
         <label>{name} - {title}</label>
-        <p>Contact: {contact}</p>
+        {contact && <p>Contact: {contact}</p>}
     </div>
 )
 
@@ -65,7 +65,7 @@ export default function Profile({profileData}) {
             </div>
 
             <div id="skills">
-                <h2><label>Technology</label></h2>
+                <h2><label>Skills</label></h2>
                 {
                     profileData.technology.map(props => <SkillItem {...props} key={props.level} />)
                 }
@@ -85,21 +85,21 @@ export default function Profile({profileData}) {
                 }
             </div>
 
-            <div id="personal-interests">
+            {/* <div id="personal-interests">
                 <h2><label>Interests</label></h2>
                 <ul>
                     {
                         profileData.interests.map(info => <li>{info}</li>)
                     }
                 </ul>
-            </div>
+            </div> */}
 
-            <div id="additional-information">
+            {/* <div id="additional-information">
                 <h2><label>Additional information</label></h2>
                 <ul>
                     {profileData.additionalInformation.map(info => <li>{info}</li>)}
                 </ul>
-            </div>
+            </div> */}
         </Layout>
     )
 }
