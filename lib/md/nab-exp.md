@@ -1,13 +1,15 @@
+- Solution design for the mini-app, microservices.
+- Working as **Principle Engineer**
+- Worked as the **Front-end Lead** in a new Australia Squad.
+- Worked as the **Lead Engineer**.
+- Maintain & develop the NAB's Cloud Architect.
 - Design, implement micro-frontend web-apps using `ReactJS`, `NodeJS` & `Docker`.
 - Design, implement micro-service using serverless Lambda & NodeJS container.
 - Implement, maintain OpenBanking APIs that meet [CDS Standard of Australia](https://consumerdatastandardsaustralia.github.io/standards)
 - Design, implement CI/CD pipeline using POSIX bash script, Docker.
-- Working as the **Front-end Lead** in a new Australia Squad.
-- Working as the **Lead Engineer**.
 - Create, maintain & implement the core libraries using npm, JFrog, Jenkins.
 - Code review.
-- Solution design.
 - On-call support.
 - Coaching, onboarding team members for all squads in Open Banking.
 - Knowledge sharing, hosting & presenting in technical workshops & tech talks.
-- Interview, hiring software engineers for NAB at all levels. 
+- Interview, hiring software engineers for NAB all levels. 

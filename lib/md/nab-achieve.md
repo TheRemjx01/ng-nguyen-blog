@@ -1,3 +1,6 @@
+- Being promoted as && Principle Engineer** since 2023.
+- Successfuly manage & release the "NAB as the Data Recipient" in 2023.
+- Scale the new squad from 0 to 13 developers with successful releases.
 - Being promoted as **Lead Engineer** since 2022.
 - Certified **AWS Associate Solution Architect** in 2021.
 - Been trusted and recognized both in VN and AU.
