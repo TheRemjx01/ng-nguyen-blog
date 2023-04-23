@@ -1,5 +1,6 @@
-- Design, implement the scalable installment plan & payment system for GrabRental in Singapore and Indonesia.
-- Working as the Front end lead.
+- Design, implement the scalable installment plan & payment system for GrabRental in multi countries.
+- Worked as the Front end lead.
+- Designed the deduction & installment service that solve the problems effectively: over deduction, double deduction, graceful period, holiday deduction, incentive management...
 - Responsible for clarifying requirements with the stakeholders and collaborate with other service owners.
 - Sprint planning.
 - Design, implement a Docker-base system that launches a production-like system environment that brings better DevExperiences for QA and devs with very limited resources.
