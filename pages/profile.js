@@ -7,7 +7,7 @@ const EducationItem = ({title, school, rangeFrom, rangeTo, description}) => (
     <div className="education-item">
         <h3>{title} - <span>{school}</span></h3>
         <p><b>{rangeFrom}</b> - <b>{rangeTo}</b></p>
-        <ReactMarkdown source={description}/>
+        <ReactMarkdown children={description}/>
     </div>
 )
 
@@ -16,9 +16,9 @@ const ExperienceItem = ({title, company, rangeFrom, rangeTo, description, techno
         <h3>{title} - <span>{company}</span></h3>
         <p><b>{rangeFrom}</b> - <b>{rangeTo}</b></p>
         <p>Technologies: {technologyStacks.toString()}</p>
-        <ReactMarkdown source={description}/>
+        <ReactMarkdown children={description}/>
         <p><b>Achievements:</b></p>
-        <ReactMarkdown source={achievements}/>
+        <ReactMarkdown children={achievements}/>
     </div>
 )
 
