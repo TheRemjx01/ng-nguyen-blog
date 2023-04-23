@@ -9,7 +9,7 @@ Is a strictly-typed language
 
 ## Support inheritance
 
-```solidity
+```
 contract B is A {
 
 }
@@ -23,7 +23,7 @@ contract B is A {
 
 - cannot compare string normally, need to convert back to hash form to compare
 
-```solidity
+```
 // this keccak256 is SHA3
 keccak256(someOperator(string1)) == keccak256(someOperator(string2))
 ```
@@ -49,7 +49,7 @@ keccak256(someOperator(string1)) == keccak256(someOperator(string2))
 - it is a function, but with special syntax and usage
 
 declaration
-```solidity
+```
 modifier isOwner() {
     require(_isOwner());
     _;
@@ -57,7 +57,7 @@ modifier isOwner() {
 ```
 
 usage
-```solidity
+```
 function aFuncUseIsOwner() public isOwner {
 
 }
